@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="build/style.css">
+</head>
+<body>
+    <div class="pantalla">
+        <div id="capa1" class="capas">
+            <div id="capa2" class="capas">
+                <div id="capa3" class="capas"><div id="cosa"></div>
+                    <div id="capa4" class="capas">
+                        <div id="capa5" class="capas">
+                            <div id="capa6" class="capas">
+                                <div id="capa7" class="capas">
+                                    <div id="capa8" class="capas">
+                                        <div id="capa9" class="capas">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="redes">
+        <a href="https://trapdouglasrelease.github.io/socials/" target="_blank">
+            <h6 >Douglas Dante Aguirre Gomez</h6>
+        </a>
+        
+    </div>
+
+    <script>
+        var xdxd = document.getElementsByClassName("capas");
+        document.onmousemove = function(){
+            var x = event.clientX * 100 / window.innerWidth  + "%";
+            var y = event.clientY * 100 / window.innerHeight  + "%";
+            
+            for(var i=0;i<9;i++)
+            {
+                xdxd[i].style.left = x;
+                xdxd[i].style.top = y;
+                xdxd[i].style.transform = "translate(-"+x+",-"+y+")"
+            }
+        }
+    </script>
+</body>
+</html>
